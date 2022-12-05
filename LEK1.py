@@ -167,3 +167,140 @@ i logistyczny są prawie identyczne poza szczytem.
 # seab.distplot(np.random.logistic(size=1000), hist=False, label='logistic')
 
 # pypl.show()
+
+
+'''
+wewnątrz funkcja musi zwracać str w postaci parzyste or not po wprowadzeniu value
+
+
+def func
+    zmienne x = input
+    try:
+        warunek logiczny --> True by try się wykonał
+        int(x)
+        
+        
+        na potrzeby tak prostego rozwiązania posłużymy się instrukcją warunkową
+        
+        
+        if x % 2 == 0:
+            print("PARZYSTE")
+        else:
+            print("Nieparzyste")
+            
+            
+        elementy wsadowe -> 0-100
+        
+        if 
+        elif
+        elif
+        ... x100
+        else
+        
+        python 3.11
+            elem z C# czyli scenariusze case
+            
+            match index -- index == x
+            
+            case 1
+            case 2
+            case 3
+            case4
+            ...
+        
+        
+    :except valueerror:
+        print("Proszę nie bądź wrednym testerem i daj tutaj liczbę !")
+
+'''
+
+def func1():
+    # x = input("Wprowadź liczbę ")
+    while True:
+        x = input("Wprowadź liczbę ")
+        try:
+            int(x)
+            if int(x) % 2 == 0:
+                print("PARZYSTE")
+            else:
+                print("Nieparzyste")
+        except ValueError:
+            print("Proszę nie bądź wrednym testerem i daj tutaj liczbę !")
+
+# func1()
+
+import random
+
+
+def generator():
+    c = []
+    for i in range(0,100):
+        c.append(random.randint(0,100))
+    # return c
+    print(c)
+
+
+# generator()
+
+
+'''
+napisz mi generator losowych list zawierających elementy stringowe (generator uproszczony funkcyjny)
+'''
+
+
+'''
+PROJEKT
+liby? -> biblioteki
+
+import string (domyślny encode UTF-8)
+
+
+
+funkcja
+    zmienne
+    empty list 
+    
+    for i in string.asciiletter:
+        append do listy
+        
+    
+
+
+'''
+
+
+import string
+
+
+def gener_str_list():
+    c = []
+    b = []
+    # randomlist = []
+    # randUpper = []
+    # randLower = []
+    for i in string.ascii_letters:
+        c.append(i)
+    for i in range(0,int(len(c))-1):
+        b.append(i)
+    dictionar = dict(zip(b,c))
+    print(dictionar)
+
+
+
+    # print(c)
+    # for i in range(0,100):
+    #     randomlist.append(c[random.randint(0,int(len(c))-1)])
+    # print(randomlist)
+    #
+    # for i in randomlist:
+    #     if i == i.upper():
+    #         randUpper.append(i)
+    #     else:
+    #         randLower.append(i)
+    #
+    # print(randUpper)
+    # print(randLower)
+
+# gener_str_list()
+
+
