@@ -304,3 +304,28 @@ def gener_str_list():
 # gener_str_list()
 
 
+# #
+# def func_list():
+#     b = []
+#     for i in range(0,3):
+#         x = input()
+#         try:
+#             int(x)
+#             b.append(int(x))
+#         except:
+#             b.append(x)
+#     return b
+#
+# def func_app_list():
+#     c = []
+#     for i in range(0,2):
+#         c.append(func_list())
+#     return c
+#
+# def func_app_list_secondDim():
+#     c = []
+#     for i in range(0,2):
+#         c.append(func_app_list())
+#     print(c)
+#
+# func_app_list_secondDim()
